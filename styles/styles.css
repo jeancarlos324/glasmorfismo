@@ -1,0 +1,88 @@
+:root{
+  --text-color:#fff;
+}
+/* *{
+  outline: 1px red solid;
+} */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body{
+  background: url(/src/background.jpg );
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+}
+.app{
+  display: flex;
+  flex-direction: row;
+}
+.glassmain{
+  display: flex;
+  width: 50%;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+.glass{
+  width: 300px;
+  height: 300px;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 30%;
+  margin: auto;
+}
+.properties{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 15px;
+  backdrop-filter: blur(19.2px);
+  background: rgba(255, 255, 255, 0.381);
+  padding: 10px;
+}
+.properties label{
+  font-size: 20px;
+  width: 40%;
+}
+.properties output{
+  width: 50%;
+}
+.properties input [type="range"]{
+  width: 100%;
+}
+.result{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-items: flex-end;
+  gap: 10px;
+}
+.result output{
+  width: 95%;
+  height: 120px;
+  backdrop-filter: blur(19.2px);
+  background: rgba(255, 255, 255, 0.613);
+  padding: 10px;
+  border-radius: 15px;
+  color: rgb(41, 41, 41);
+  font-size: 15px;
+}
+.result button{
+  width: 20%;
+  border-radius: 5px;
+  background-color: #0075fe;
+  color: var(--text-color);
+  border: none;
+  height: 20px;
+  transition: 0.4s;
+}
+.result button:hover{
+  border-radius: 5px;
+  background-color: #0074f87b;
+}

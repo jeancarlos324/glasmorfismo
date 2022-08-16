@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <title>Glasmorph</title>
+</head>
+<body>
+  <main class="app">
+    <div class="glassmain">
+      <div class="glass"></div>
+    </div>
+    <section>
+      <div id="color" class="properties">
+        <label>Color</label>
+        <input class="color" type="color">
+      </div>
+      <div id="opacity" class="properties" min="1%" max="100%">
+        <div>
+          <label>Transparencia: </label>
+          <output class="get-opacity"></output>
+        </div>
+        <input class="opacity" type="range">
+      </div>
+      <div id="blur" class="properties">
+        <div>
+          <label>Blur: </label>
+          <output class="get-blur"></output>
+        </div>
+        <input class="blur" type="range" min="1px" max="30px">
+      </div>
+      <div id="contrast" class="properties">
+        <div>
+          <label>Contraste: </label>
+          <output class="get-contrast"></output>
+        </div>
+        <input class="contrast" type="range" min="1%" max="100%">
+      </div>
+      <div id="saturate" class="properties">
+        <div>
+          <label>Saturación: </label>
+          <output class="get-saturate"></output>
+        </div>
+        <input class="saturate" type="range" min="1%" max="100%">
+      </div>
+      <div id="size" class="properties">
+        <div>
+          <label>Tamaño: </label>
+          <output class="get-size"></output>
+        </div>
+        <input class="size" type="range" min="1px" max ="500px">
+      </div>
+      <div id="border-radius" class="properties">
+        <div>
+          <label>Borde: </label>
+          <output class="get-border-radius"></output>
+        </div>
+        <input class="border-radius" type="range" min="1px" max="250px" value="0">
+      </div>
+      <div class="result">
+        <output class="stylescopy"></output>
+        <button class="copycode" type="button" value="Copy">Copy</button>
+      </div>
+    </section>
+  </main>
+  <script src="/scripts/main.js"></script>
+</body>
+</html>
